@@ -27,6 +27,7 @@
         <img id="Logo" alt="Pet Partner Pawprint Logo" src="PetPartnerLogo.png">
             <h1 id="Title">Pet <span id="Title2">Partners</span></h1>
 
+                <!-- Mobile and Tablet Navigation -->
         <nav class="Dropdown">
             <button class="DropButton">Menu</button>
             <div class="Dropdown_items">
@@ -37,11 +38,27 @@
                 <a href="Contact.html">Contact Us</a>
             </div>
         </nav>
+        
+        <!-- Desktop Nav --> 
+        <nav class="DesktopNav">
+            <ul>
+                <li><a href="index.html">About us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Schedule.html">Schedule Now</a></li>
+                <li><a href="Reviews.html">Reviews</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
         </header>
         <main class="MainContent"> 
-
+            
+            <h2 class ="ServicesHeading">Schedule Now</h2>
+            <p>Please fill out the below form and include the service(s) you would like for our staff to perform for your loved ones.
+            </p>
+            
+            <div class="FormContainer">
             <form method="post" action="/action_page.php">
-                
+               
                 <label class="ContactLabel" for="firstName">First Name: </label>
                     <input class="ContactInput" type="text" name="firstName" id="firstName" required="required">
                 
@@ -59,8 +76,9 @@
                     </textarea>
                 
                 <input class="ContactLabel" type="submit" value="Send Now" id="ScheduleSubmit">
-                
+            
            </form>
+            </div>
             
         </main>
             
